@@ -1,0 +1,22 @@
+h1{
+    color: yellow;
+}
+
+img{
+    width: 100px;
+    height: auto;
+}
+
+#message{
+    color: red;
+}
+
+table {
+    padding: 20px;
+    text-align: center;
+    background-position-y: -60px;
+}
+th{
+    padding: 20px;
+}
+

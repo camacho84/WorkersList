@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body style="font-family: Arial; font-size: 12 px; background-image: url('p.jpg');">
+<body>
+
+<table>
+    <thead>
+    <header>
+        <th>Name </th>
+        <th>Surname</th>
+        <th>Work Time (hours)</th>
+        <th>Have You finished?</th>
+    </header>
+    </thead>
+    <tbody>
+    <tr th:each="wpis: ${wpisy}">
+        <td th:text="${wpis.name}"/>
+        <td th:text="${wpis.surname}"/>
+        <td th:text="${wpis.workTime}"/>
+        <td th:text="${wpis.surname()}"/>
+    </tr>
+    </tbody>
+</table>
+<hr>
+
+<a href="/finished"><img src="completed.png"></a> <a href="/unfinished"><img src="i.png"></a>
+<p></p>
+<a href="/glowna"><img src="new.png"></a>
+
+
+</body>
+</html>
